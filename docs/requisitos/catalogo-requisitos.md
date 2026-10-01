@@ -279,8 +279,8 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | UR/FR relacionados | Método de comprobación | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
-| NFR-01 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma debera mantener una disponibilidad de como minimo un 99,5% cada mes.| G | -  |Monitoreando el tiempo activo y fucionando correctamente del servidor y comparandolo con uno hipotetico.  | - |
-
+| NFR-01 |NFR-Q (Disponibilidad) |La plataforma debera mantener una disponibilidad de como minimo un 99,5% cada mes.| G | -  |  comprobación automática realizada cada cinco minutos desde un sistema externo a la plataforma, y una comprobación se considerará fallida cuando no sea posible acceder a la plataforma o utilizar sus funciones principales. | - |
+| NFR-02 |NFR-I (Interfaces de software) |La autenticación se realizará utilizando OAuth 2.0 u OpenID Connect sobre HTTPS y que la plataforma no almacenará la contraseña de Google.| L | FR-006 FR-018  | prueba de autenticación con una cuenta de prueba y la revisión de la configuración de la integración| - |
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
 2) Restricciones (NFR-R): Tecnología y entorno, Hardware, Regulaciones y estándares, Compatibilidad, Interfaces existentes, Restricciones presupuestarias y de gestión.
